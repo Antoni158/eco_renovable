@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECO-RENOVABLE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>🌞 ECO-RENOVABLE</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#seccion1">Productos</a></li>
+        <li><a href="#seccion2">Instalación</a></li>
+        <li><a href="#seccion3">Mantenimiento</a></li>
+        <li><a href="#cotizador">Cotización</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button id="btnSubir" title="Volver arriba">⬆</button>
+
+  <main id="inicio">
+    <!-- ==========================
+         SECCIÓN INICIO
+    =========================== -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Bienvenido a ECO-RENOVABLE</h2>
+        <p>Transforma tu hogar con energía solar limpia, moderna y eficiente. 🌿</p>
+        <a href="#seccion1" class="btn-principal">Explorar Productos</a>
+      </div>
+    </section>
+
+    <!-- ==========================
+         SECCIÓN PRODUCTOS (con pestañas)
+    =========================== -->
+    <section id="seccion1" class="section-products">
+      <div class="max-content">
+        <h2>🌞 Catálogo de Productos</h2>
+        <p>Explora nuestras soluciones solares organizadas por categoría.</p>
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="panelesProd">⚡ Paneles Solares</button>
+          <button class="tab-btn" data-tab="camarasProd">📷 Cámaras Solares</button>
+          <button class="tab-btn" data-tab="kitsProd">💡 Bombillas y Kits</button>
+        </div>
+
+        <!-- PANEL: PANELES -->
+        <div class="tab-content active" id="panelesProd">
+          <div class="catalogo-grid">
+            <div class="catalogo-item">
+              <img src="img/2kww.jpeg" alt="Sistema Micro">
+              <h4>Sistema Micro (1.1 kWp, 2 paneles)</h4>
+              <p>Ahorros mensuales: Q300–350</p>
+              <span class="precio" data-precio="12500">Q12,500</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/3kwl.jpeg" alt="Sistema Pequeño">
+              <h4>Sistema Pequeño (2.3 kWp, 4 paneles)</h4>
+              <p>Ahorros mensuales: Q600–650</p>
+              <span class="precio" data-precio="15000">Q15,000</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/5kww.jpeg" alt="Sistema Mediano">
+              <h4>Sistema Mediano (4.6 kWp, 8 paneles)</h4>
+              <p>Ahorros mensuales: Q1,000–1,150</p>
+              <span class="precio" data-precio="19200">Q19,200</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/sistema_grande.webp" alt="Sistema Grande">
+              <h4>Sistema Grande (9.2 kWp, 16 paneles)</h4>
+              <p>Ahorros mensuales: Q2,100–2,200</p>
+              <span class="precio" data-precio="20750">Q20,750</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL: CAMARAS -->
+        <div class="tab-content" id="camarasProd">
+          <div class="catalogo-grid">
+            <div class="catalogo-item">
+              <img src="img/camarawifi2mp.webp" alt="Cámara WiFi 2MP">
+              <h4>Cámara Solar WiFi 2MP (Supranet)</h4>
+              <span class="precio" data-precio="1199">Q1,199</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/camara4g.webp" alt="Cámara 4G">
+              <h4>Cámara Solar con Chip 4G (6 MPX)</h4>
+              <span class="precio" data-precio="549.5">Q549.50</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/camara4g_4mp.webp" alt="Cámara 4G LED">
+              <h4>Cámara Inalámbrica 4G (4MP, 2.5K)</h4>
+              <span class="precio" data-precio="1890">Q1,890</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/camaraexterior.webp" alt="Cámara Exterior">
+              <h4>Cámara Solar Exterior Full HD</h4>
+              <span class="precio" data-precio="750">Q750</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL: KITS -->
+        <div class="tab-content" id="kitsProd">
+          <div class="catalogo-grid">
+            <div class="catalogo-item">
+              <img src="img/bombillas3uni.webp" alt="Kit Doméstico">
+              <h4>Kit Solar Doméstico (3 bombillas)</h4>
+              <span class="precio" data-precio="750">Q750</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/bombillas4uni.webp" alt="Kit Jade">
+              <h4>Kit Jade (4 bombillas + accesorios)</h4>
+              <span class="precio" data-precio="900">Q900</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/kitmulti.webp" alt="Kit 7000mAh">
+              <h4>Kit Solar 7000 mAh Multifuncional</h4>
+              <span class="precio" data-precio="1200">Q1,200</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+
+            <div class="catalogo-item">
+              <img src="img/bombilla200.webp" alt="Lámpara 200W">
+              <h4>Lámpara Solar 200W</h4>
+              <span class="precio" data-precio="520">Q520</span>
+              <input type="number" class="cantidad" min="0" value="0">
+            </div>
+          </div>
+        </div>
+
+        <div class="resumen-total">
+          <button class="btn-ver-total">💰 Ver Total Estimado</button>
+          <span class="total">Q0.00</span>
+        </div>
+
+        <button class="btn-hacer-cotizacion">🛒 Comprar Producto</button>
+        <form id="formProductos" class="formulario" style="display:none;">
+          <h3>🛍 Finalizar Compra</h3>
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="tel" name="telefono" placeholder="Teléfono (8 dígitos)" required pattern="[0-9]{8}">
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <textarea name="direccion" rows="4" placeholder="Dirección exacta o comentarios adicionales" required></textarea>
+          <button type="submit">Confirmar Pedido</button>
+        </form>
+        <p id="mensajeProductos"></p>
+      </div>
+    </section>
+
+    <!-- ==========================
+         SECCIÓN INSTALACIÓN
+    =========================== -->
+    <section id="seccion2" class="section-installation">
+      <div class="max-content">
+        <h2>⚡ Instalación de Sistemas Solares</h2>
+        <p>Instalación completa adaptada a tu hogar o negocio.</p>
+
+        <div class="catalogo-grid">
+          <div class="catalogo-item">
+            <img src="img/5kww.jpeg" alt="Sistema Mediano">
+            <h4>Instalación Sistema Mediano (8 paneles)</h4>
+            <span class="precio" data-precio="4500">Q4,500</span>
+            <input type="number" class="cantidad" min="0" value="0">
+          </div>
+
+          <div class="catalogo-item">
+            <img src="img/16 paneles.webp" alt="Sistema Grande">
+            <h4>Instalación Sistema Grande (16 paneles)</h4>
+            <span class="precio" data-precio="8000">Q8,000</span>
+            <input type="number" class="cantidad" min="0" value="0">
+          </div>
+        </div>
+
+        <div class="resumen-total">
+          <button class="btn-ver-total">💰 Ver Total</button>
+          <span class="total">Q0.00</span>
+        </div>
+
+        <button class="btn-hacer-cotizacion">📋 Solicitar Instalación</button>
+        <form id="installForm" class="formulario" style="display:none;">
+          <h3>📍 Solicitud de Instalación</h3>
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="tel" name="telefono" placeholder="Teléfono (8 dígitos)" required pattern="[0-9]{8}">
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <textarea name="direccion" rows="4" placeholder="Dirección exacta o referencia del sitio" required></textarea>
+          <button type="submit">Enviar Solicitud</button>
+        </form>
+        <p id="mensaje-instalacion"></p>
+      </div>
+    </section>
+
+    <!-- ==========================
+         SECCIÓN MANTENIMIENTO
+    =========================== -->
+    <section id="seccion3" class="section-maintenance">
+      <div class="max-content">
+        <h2>🔧 Servicio de Mantenimiento</h2>
+        <p>Mantenemos tus equipos solares en perfecto estado.</p>
+
+        <div class="catalogo-grid">
+          <div class="catalogo-item">
+            <img src="img/man_paneles.webp" alt="Paneles">
+            <h4>Mantenimiento de Paneles</h4>
+            <p>Limpieza y revisión eléctrica profesional.</p>
+            <span class="precio" data-precio="350">Q350</span>
+            <input type="number" class="cantidad" min="0" value="0">
+          </div>
+
+          <div class="catalogo-item">
+            <img src="img/man_camaras.webp" alt="Cámaras">
+            <h4>Mantenimiento de Cámaras</h4>
+            <p>Calibración, limpieza de lentes y ajustes.</p>
+            <span class="precio" data-precio="300">Q300</span>
+            <input type="number" class="cantidad" min="0" value="0">
+          </div>
+
+          <div class="catalogo-item">
+            <img src="img/diagnostico.webp" alt="Diagnóstico">
+            <h4>Diagnóstico Técnico</h4>
+            <p>Evaluación completa y soporte a domicilio.</p>
+            <span class="precio" data-precio="400">Q400</span>
+            <input type="number" class="cantidad" min="0" value="0">
+          </div>
+        </div>
+
+        <div class="resumen-total">
+          <button class="btn-ver-total">💰 Ver Total</button>
+          <span class="total">Q0.00</span>
+        </div>
+
+        <button class="btn-hacer-cotizacion">🧰 Solicitar Mantenimiento</button>
+        <form id="formMantenimiento" class="formulario" style="display:none;">
+          <h3>🧰 Solicitud de Mantenimiento</h3>
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="tel" name="telefono" placeholder="Teléfono (8 dígitos)" required pattern="[0-9]{8}">
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <textarea name="direccion" rows="4" placeholder="Dirección exacta o detalle del problema" required></textarea>
+          <button type="submit">Enviar Solicitud</button>
+        </form>
+        <p id="mensajeMantenimiento"></p>
+      </div>
+    </section>
+<!-- ==========================
+     SECCIÓN COTIZADOR
+=========================== -->
+<section id="cotizador" class="section-quote">
+  <div class="max-content">
+    <h2>🧾 Cotizador General</h2>
+    <p>Selecciona los productos por categoría y solicita tu cotización personalizada.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="panelesCot">⚡ Paneles</button>
+      <button class="tab-btn" data-tab="camarasCot">📷 Cámaras</button>
+      <button class="tab-btn" data-tab="kitsCot">💡 Bombillas y Kits</button>
+    </div>
+
+    <!-- PANEL: PANELES -->
+    <div class="tab-content active" id="panelesCot">
+      <div class="catalogo-grid">
+        <div class="catalogo-item"><img src="img/2kww.jpeg" alt="Sistema Micro"><h4>Sistema Micro (1.1 kWp, 2 paneles)</h4><span class="precio" data-precio="12500">Q12,500</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/3kwl.jpeg" alt="Sistema Pequeño"><h4>Sistema Pequeño (2.3 kWp, 4 paneles)</h4><span class="precio" data-precio="15000">Q15,000</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/5kww.jpeg" alt="Sistema Mediano"><h4>Sistema Mediano (4.6 kWp, 8 paneles)</h4><span class="precio" data-precio="19200">Q19,200</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/sistema_grande.webp" alt="Sistema Grande"><h4>Sistema Grande (9.2 kWp, 16 paneles)</h4><span class="precio" data-precio="20750">Q20,750</span><input type="number" class="cantidad" min="0" value="0"></div>
+      </div>
+    </div>
+
+    <!-- PANEL: CAMARAS -->
+    <div class="tab-content" id="camarasCot">
+      <div class="catalogo-grid">
+        <div class="catalogo-item"><img src="img/camarawifi2mp.webp" alt="Cámara WiFi 2MP"><h4>Cámara Solar WiFi 2MP (Supranet)</h4><span class="precio" data-precio="1199">Q1,199</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/camara4g.webp" alt="Cámara Solar 4G"><h4>Cámara Solar con Chip 4G (6 MPX)</h4><span class="precio" data-precio="549.5">Q549.50</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/camara4g_4mp.webp" alt="Cámara 4G LED"><h4>Cámara Inalámbrica 4G (4MP, 2.5K)</h4><span class="precio" data-precio="1890">Q1,890</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/camaraexterior.webp" alt="Cámara Exterior"><h4>Cámara Solar Exterior Full HD</h4><span class="precio" data-precio="750">Q750</span><input type="number" class="cantidad" min="0" value="0"></div>
+      </div>
+    </div>
+
+    <!-- PANEL: KITS -->
+    <div class="tab-content" id="kitsCot">
+      <div class="catalogo-grid">
+        <div class="catalogo-item"><img src="img/bombillas3uni.webp" alt="Kit Doméstico"><h4>Kit Solar Doméstico (3 bombillas)</h4><span class="precio" data-precio="750">Q750</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/bombillas4uni.webp" alt="Kit Jade"><h4>Kit Jade (4 bombillas + accesorios)</h4><span class="precio" data-precio="900">Q900</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/kitmulti.webp" alt="Kit Solar 7000mAh"><h4>Kit Solar 7000 mAh Multifuncional</h4><span class="precio" data-precio="1200">Q1,200</span><input type="number" class="cantidad" min="0" value="0"></div>
+        <div class="catalogo-item"><img src="img/bombilla200.webp" alt="Lámpara 200W"><h4>Lámpara Solar 200W</h4><span class="precio" data-precio="520">Q520</span><input type="number" class="cantidad" min="0" value="0"></div>
+      </div>
+    </div>
+
+    <div class="resumen-total">
+      <button class="btn-ver-total">💰 Ver Total</button>
+      <span class="total">Q0.00</span>
+    </div>
+
+    <button class="btn-hacer-cotizacion">📨 Enviar Cotización</button>
+    <form id="formCotizacionGeneral" class="formulario" style="display:none;">
+      <h3>📄 Cotización General</h3>
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="tel" name="telefono" placeholder="Teléfono (8 dígitos)" required pattern="[0-9]{8}">
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <textarea name="direccion" rows="4" placeholder="Dirección o comentarios adicionales" required></textarea>
+      <button type="submit">Enviar Cotización</button>
+    </form>
+    <p id="mensajeCotizacion"></p>
+  </div>
+</section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modalConfirm" class="modal">
+    <div class="modal-content">
+      <h3>🛒 Confirmar Pedido</h3>
+      <div id="resumenPedido"></div>
+      <div class="modal-buttons">
+        <button id="btnConfirmar" class="btn-confirmar">Confirmar</button>
+        <button id="btnCancelar" class="btn-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer id="contacto">
+    <div class="social-media">
+      <a href="https://www.facebook.com/share/1CKnt9GJRL/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/ecorenovable" target="_blank"><img src="img/instagram.jpeg" alt="Instagram"></a>
+     <a href="https://wa.me/50255716485" target="_blank"><img src="img/telefono.png" alt="Whatsapp"></a>
+
+    </div>
+    <p>&copy; 2025 Desarrollado por JAC</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
